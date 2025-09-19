@@ -2,105 +2,174 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bio Data</title>
+  <title>Resume - Mohammed Afzal</title>
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: #f4f7fa;
+      background: #f9f6fb;
       margin: 0;
       padding: 40px;
       display: flex;
       justify-content: center;
     }
 
-    .biodata {
+    .resume {
       background: #fff;
-      max-width: 800px;
+      max-width: 1000px;
       width: 100%;
-      padding: 40px;
-      border-radius: 10px;
+      border-radius: 12px;
       box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
-    }
-
-    header {
       display: flex;
-      align-items: center;
-      border-bottom: 3px solid #0077b6;
-      padding-bottom: 20px;
-      margin-bottom: 30px;
+      overflow: hidden;
     }
 
-    header img {
-      width: 120px;
-      height: 120px;
+    /* Sidebar */
+    .sidebar {
+      background: linear-gradient(180deg, #6a11cb, #b24592);
+      color: #fff;
+      width: 300px;
+      padding: 40px 25px;
+    }
+
+    .sidebar img {
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      margin-right: 20px;
-      border: 4px solid #0077b6;
+      border: 5px solid #fff;
       object-fit: cover;
+      display: block;
+      margin: 0 auto 15px;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-      color: #0077b6;
-    }
-
-    h2 {
+    .sidebar h1 {
       text-align: center;
-      color: #333;
-      margin-bottom: 20px;
+      font-size: 1.8em;
+      margin: 10px 0 5px;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    td {
-      padding: 12px 15px;
-      border: 1px solid #ccc;
+    .sidebar h2 {
+      text-align: center;
       font-size: 1em;
-      color: #444;
+      font-weight: normal;
+      opacity: 0.9;
+      margin: 0 0 25px;
     }
 
-    td:first-child {
-      font-weight: bold;
-      background: #e3f2fd;
-      width: 30%;
-      color: #0077b6;
+    .sidebar section {
+      margin-bottom: 25px;
+    }
+
+    .sidebar h3 {
+      border-bottom: 2px solid rgba(255,255,255,0.6);
+      padding-bottom: 6px;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .sidebar p, 
+    .sidebar li {
+      font-size: 0.95em;
+      line-height: 1.6;
+      margin: 5px 0;
+    }
+
+    .sidebar ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    /* Main Content */
+    .main {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .main section {
+      margin-bottom: 25px;
+    }
+
+    .main h3 {
+      color: #6a11cb;
+      margin-bottom: 10px;
+      border-left: 5px solid #b24592;
+      padding-left: 10px;
+      font-size: 1.2em;
+    }
+
+    .main p, .main li {
+      color: #444;
+      line-height: 1.6;
+      font-size: 1.05em;
+    }
+
+    .main ul {
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
 
-  <div class="biodata">
-    <!-- Header -->
-    <header>
-      <img src="photo.jpg" alt="Photo">
-      <div>
-        <h1>Sindhuja S</h1>
-        <p><b>B.Sc Computer Science with Artificial Intelligence</b> (Current)</p>
-      </div>
-    </header>
+  <div class="resume">
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img src="photo.jpg" alt="nidhesh S">
+      <h1>Sindhuja S</h1>
+      <h2>Web Developer (Student)</h2>
 
-    <h2>Bio Data</h2>
+      <section>
+        <h3>Contact</h3>
+        <p><b>Phone:</b> +91 9345135601</p>
+        <p><b>Email:</b> sindhusanthosh792@gmail.com</p>
+        <p><b>Address:</b> Chennai,Tamil Nadu,India</p>
+      </section>
 
-    <table>
-      <tr><td>Name</td><td>Sindhuja S</td></tr>
-      <tr><td>Father's Name</td><td>Santhosh G</td></tr>
-      <tr><td>Mother's Name</td><td>Rajeswari S</td></tr>
-      <tr><td>Date of Birth</td><td>20-03-2007</td></tr>
-      <tr><td>Gender</td><td>Female</td></tr>
-      <tr><td>Nationality</td><td>Indian</td></tr>
-      <tr><td>Address</td><td>Ambattur,Chennai-53</td></tr>
-      <tr><td>Contact</td><td>+91 9345135601</td></tr>
-      <tr><td>Email</td><td>sindhusanthosh792@gmail.com</td></tr>
-      <tr><td>Qualification</td><td>B.Sc Computer Science with Artificial Intelligence (Current)</td></tr>
-      <tr><td>Hobbies</td><td>Drawing, Playing</td></tr>
-    </table>
+      <section>
+        <h3>Personal Details</h3>
+        <p><b>Father:</b> Santhosh G</p>
+        <p><b>Mother:</b> Rajeswari S</p>
+        <p><b>DOB:</b> 20-03-2007</p>
+        <p><b>Gender:</b> Female</p>
+        <p><b>Nationality:</b> Indian</p>
+      </section>
+
+      <section>
+        <h3>Hobbies</h3>
+        <p> Designing, Exploring Tech</p>
+      </section>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <section>
+        <h3>Profile</h3>
+        <p>A motivated student passionate about web development, eager to gain real-world experience and grow technical expertise in modern web technologies.</p>
+      </section>
+
+      <section>
+        <h3>Education</h3>
+        <p><b>Currently:</b> Student, focusing on Web Development & Programming</p>
+      </section>
+
+      <section>
+        <h3>Projects</h3>
+        <ul>
+          <li><b>Personal Portfolio</b> – Built a portfolio website to showcase projects and skills using HTML, CSS, and JavaScript.</li>
+          <li><b>UI Design Experiments</b> – Designed modern web UI layouts to practice responsive and aesthetic design principles.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Responsive Web Design</li>
+          <li>Basic Python</li>
+          <li>UI/UX Design Principles</li>
+        </ul>
+      </section>
+    </div>
   </div>
 
 </body>
 </html>
-
-
